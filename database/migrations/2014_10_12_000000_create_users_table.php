@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->bigInteger('role_id')->unsigned();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('image')->default("default.png");
+            $table->string('image')->default("assets/default.png");
             $table->enum('status',[0,1]);
             $table->string('password');
             $table->rememberToken();
